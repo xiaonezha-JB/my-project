@@ -1,0 +1,178 @@
+.all {
+    width: 100%;
+    // 顶部搜索
+    .top_search {
+        width: 100%;
+        height: 198rpx;
+        border-top: 1rpx solid #cccccc;
+        border-bottom: 1rpx solid #cccccc;
+        box-sizing: border-box;
+        // 搜索
+        .search {
+            width: 100%;
+            height: 66rpx;
+            padding: 0 30rpx;
+            position: relative;
+            margin: 31rpx auto 0;
+            .iconfont {
+                font-size: 26rpx;
+                position: absolute;
+                left: 30rpx;
+                top: 20rpx;
+                padding-left: 29rpx;
+            }
+            input {
+                width: 690rpx;
+                height: 66rpx;
+                box-sizing: border-box;
+                background-color: #ffffff;
+                border-radius: 50rpx;
+                padding-left: 97rpx;
+                border: 1rpx solid #cccccc;
+                box-shadow: 2rpx 2rpx 2rpx #888888;
+                font-size: 25rpx;
+                color: #000000;
+                line-height: 66rpx;
+            }
+        }
+        // 下拉框
+        .drop_down {
+            width: 100%;
+            height: 80rpx;
+            margin-top: 20rpx;
+            padding-top: 10rpx;
+            box-sizing: border-box;
+            display: flex;
+            span {
+                flex: auto;
+                text-align: center;
+                font-size: 30rpx;
+                color: #9a9a9a;
+            }
+            span:hover {
+                font-size: 30rpx;
+                color: #f00089;
+            }
+        }
+        // 下拉内容
+        .down_content {
+            width: 100%;
+            height: 285rpx;
+            z-index: 1;
+            overflow: hidden;
+            animation: myfirst 0.5s;
+            position: fixed;
+            background-color: #ffffff;
+            padding: 20rpx 20rpx;
+            box-sizing: border-box;
+            .classify {
+                height: 56rpx;
+                padding: 10rpx 21rpx;
+                box-sizing: border-box;
+                background-color: #e2e2e2;
+                font-size: 30rpx;
+                color: #000000;
+                border-radius: 5rpx;
+                margin-left: 20rpx;
+                margin-bottom: 20rpx;
+                float: left;
+            }
+            .classify:nth-child(1) {
+                margin-left: 0rpx;
+            }
+            .classify:nth-child(6) {
+                margin-left: 0rpx;
+            }
+            .classify:hover {
+                background-color: #f6a338;
+                color: #e2e2e2;
+            }
+        }
+        @keyframes myfirst {
+            0% {
+                height: 0rpx;
+            }
+            20% {
+                height: 55rpx;
+            }
+            40% {
+                height: 110rpx;
+            }
+            60% {
+                height: 165rpx;
+            }
+            80% {
+                height: 230rpx;
+            }
+            100% {
+                height: 285rpx;
+            }
+        }
+    }
+    // 内容区域
+    .content {
+        width: 100%;
+        padding: 20rpx 20rpx;
+        box-sizing: border-box;
+        .nearby-exhibition {
+            width: 100%;
+            height: 168rpx;
+            border-bottom: 1rpx solid #ccc;
+            margin-top: 30rpx;
+            .nearby-left {
+                width: 144rpx;
+                height: 144rpx;
+                float: left;
+                image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8rpx;
+                }
+            }
+            .nearby-right {
+                height: 144rpx;
+                margin-left: 20rpx;
+                float: left;
+                p {
+                    width: 540rpx;
+                }
+                p:nth-child(1) {
+                    font-size: 30rpx;
+                    font-weight: 700;
+                    color: #343434;
+                }
+                p:nth-child(2) {
+                    font-size: 25rpx;
+                    color: #999999;
+                    margin-top: 8rpx;
+                    overflow:hidden; 
+                    text-overflow:ellipsis;
+                    display:-webkit-box; 
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 2; 
+                }
+                p:nth-child(3) {
+                    font-size: 24rpx;
+                    color: #e40486;
+                    margin-top: 8rpx;
+                }
+                // span {
+                //     font-size: 22rpx;
+                //     color: #9f9f9f;
+                //     position: absolute;
+                //     right: 30rpx;
+                // }
+            }
+        }
+        .nearby-exhibition:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+.clearfloat:after {
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}

@@ -1,0 +1,166 @@
+// 头部
+.head {
+    width: 100%;
+    height: 178rpx;
+    // 搜索
+    .search {
+        width: 100%;
+        height: 66rpx;
+        padding: 0 30rpx;
+        box-sizing: border-box;
+        position: relative;
+        .iconfont {
+            font-size: 35rpx;
+            position: absolute;
+            left: 30rpx;
+            top: 20rpx;
+            padding-left: 29rpx;
+            color: #b0b0b0;
+        }
+        input {
+            width: 100%;
+            height: 66rpx;
+            padding: 0 30rpx;
+            box-sizing: border-box;
+            background-color: #f3f3f3;
+            border-radius: 50rpx;
+            padding-left: 97rpx;
+            font-size: 30rpx;
+            color: #b0b0b0;
+        }
+    }
+    // 导航栏
+    .nav {
+        width: 100%;
+        height: 80rpx;
+        margin-top: 27rpx;
+        box-sizing: border-box;
+        .test {
+            width: 100%;
+            box-sizing: border-box;
+            .testNav {
+                height: 80rpx;
+                padding: 0 15rpx;
+                line-height: 80rpx;
+                display: flex;
+                .testTitle {
+                    font-size: 32rpx;
+                    text-align: center;
+                    flex: 1;
+                }
+                .selected {
+                    color: #eb028c;
+                    border-bottom: 1rpx solid #eb028c;
+                    text-align: center;
+                }
+            }
+            .container {
+                width: 100%;
+                position: relative;
+                .content_one {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .content_two {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .content_three {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    .payment {
+                        color: #eb028c;
+                        border: 1rpx solid #eb028c;
+                    }
+                }
+            }
+        }
+    }
+}
+// 内容区域
+.content_one {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 10rpx 15rpx 18rpx 15rpx;
+    box-sizing: border-box;
+    // 卡片
+    .card {
+        width: 720rpx;
+        height: 350rpx;
+        border-radius: 8rpx;
+        background-color: #ffffff;
+        margin-top: 18rpx;
+        padding: 34rpx 17rpx 34rpx 17rpx;
+        box-sizing: border-box;
+        // 上面文字
+        .word-top {
+            width: 100%;
+            height: 27rpx;
+            span:nth-child(1) {
+                font-size: 23rpx;
+                color: #9b9b9b;
+                float: left;
+            }
+            span:nth-child(2) {
+                font-size: 27rpx;
+                color: #e9008b;
+                float: right;
+            }
+        }
+        // 信息展示
+        .exhibition-box {
+            width: 100%;
+            height: 131rpx;
+            margin-top: 43rpx;
+            display: flex;
+            .left-img {
+                width: 131rpx;
+                height: 131rpx;
+                image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8rpx;
+                }
+            }
+            .right-word {
+                flex: 1;
+                width: 405rpx;
+                height: 131rpx;
+                padding: 12rpx 21rpx 12rpx; 
+                p:nth-child(1) {
+                    font-size: 25rpx;
+                    color: #303030;
+                }
+                p:nth-child(2) {
+                    font-size: 25rpx;
+                    margin-top: 7rpx;
+                    color: #999999;
+                }
+                p:nth-child(3) {
+                    font-size: 25rpx;
+                    margin-top: 7rpx;
+                    color: #999999;
+                }
+            }
+        }
+        // 立即支付
+        .payment {
+            width: 134rpx;
+            height: 52rpx;
+            margin-top: 38rpx;
+            line-height: 52rpx;
+            text-align: center;
+            font-size: 24rpx;
+            color: #eb028c;
+            border-radius: 50rpx;
+            border: 1rpx solid #eb028c;
+            float: right;
+        }
+    }
+}

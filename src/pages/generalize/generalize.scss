@@ -1,0 +1,31 @@
+.generalize {
+    width: 100%;
+    padding: 27rpx 30rpx 27rpx;
+    box-sizing: border-box;
+    border-top: 1rpx solid #cccccc;
+    .generalize_box {
+        width: 100%;
+        height: 195rpx;
+        background-color: #ffffff;
+        border-radius: 5rpx;
+        padding: 37rpx 30rpx 0;
+        box-sizing: border-box;
+        margin-bottom: 27rpx;
+        border-bottom: 2rpx solid #000000;
+        p:nth-child(1) {
+            font-size: 31rpx;
+            color: #333333;
+            font-weight: 700;
+        }
+        p:nth-child(2) {
+            font-size: 24rpx;
+            color: #9c9c9c;
+            margin-top: 24rpx;
+        }
+        p:nth-child(3) {
+            font-size: 21rpx;
+            color: #cccccc;
+            margin-top: 27rpx;
+        }
+    }
+}

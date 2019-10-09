@@ -1,0 +1,243 @@
+.content {
+    width: 100%;
+    height: 1190rpx;
+    padding: 21rpx 30rpx;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    // 商品介绍
+    .content_box {
+        width: 100%;
+        height: 293rpx;
+        border-radius: 8rpx;
+        background-color: #ffffff;
+        // 上边内容
+        .content_top {
+            width: 100%;
+            height: 197rpx;
+            border-bottom: 1rpx dashed #cccccc;
+            padding: 33rpx 26rpx;
+            box-sizing: border-box;
+            // 图片展示
+            .img_left {
+                width: 133rpx;
+                height: 133rpx;
+                float: left;
+                image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8rpx;
+                }
+            }
+            // 文字展示
+            .word_centre {
+                width: 280rpx;
+                height: 133rpx;
+                float: left;
+                margin-left: 20rpx;
+                padding-top: 10rpx;
+                p:nth-child(1) {
+                    width: 280rpx;
+                    font-size: 25rpx;
+                    color: #323232;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                    overflow:hidden;
+                }
+                p:nth-child(2) {
+                    font-size: 25rpx;
+                    color: #999999;
+                    margin-top: 5rpx;
+                }
+                p:nth-child(3) {
+                    font-size: 25rpx;
+                    color: #999999;
+                    margin-top: 5rpx;                    
+                }
+            }
+            // 加减
+            .addition_box {
+                width: 150rpx;
+                height: 46rpx;
+                float: right;
+                margin-top: 80rpx;
+                .subtraction {
+                    width: 46rpx;
+                    height:46rpx;
+                    float: left;
+                    border: 1rpx solid #999999;
+                    border-radius: 5rpx;
+                    line-height: 46rpx;
+                    text-align: center;
+                }
+                input {
+                    width: 50rpx;
+                    height: 46rpx;
+                    font-size: 21rpx;
+                    color: #323232;
+                    font-weight: 700;
+                    line-height: 46rpx;
+                    text-align: center;
+                    float: left;
+                }
+                .addition {
+                    width: 46rpx;
+                    height: 46rpx;
+                    border: 1rpx solid #ee008c;
+                    color: #ee008c;
+                    border-radius: 5rpx;
+                    line-height: 46rpx;
+                    text-align: center;
+                    float: left;
+                }
+            }
+        }
+        // 下边展示
+        .content_bottom {
+            width: 100%;
+            height: 98rpx;
+            .subtotal {
+                width: 240rpx;   
+                height: 100%;
+                line-height: 98rpx;
+                text-align: center;
+                float: right; 
+                span:nth-child(1) {
+                    font-size: 37rpx;
+                    color: #323232;
+                    font-weight: 700;
+                }
+                span:nth-child(2) {
+                    font-size: 37rpx;
+                    color: #ee008c;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    // 可用积分
+    .integral {
+        width: 100%;
+        height: 118rpx;
+        background-color: #ffffff;
+        margin-top: 20rpx;
+        border-radius: 8rpx;
+        padding: 43rpx 25rpx;
+        box-sizing: border-box;
+        .integral_word {
+            font-size: 30rpx;
+            color: #323232;
+            font-weight: 700;
+            float: left;
+        }
+        .switch_right {
+            width: 140rpx;
+            height: 68rpx;
+            float: right;
+            span {
+                font-size: 23rpx;
+                color: #cccccc;
+                padding-right: 10rpx;
+            }
+        }
+        
+    }
+    // 展示手机号和实付款
+    .phone {
+        width: 100%;
+        height: 300rpx;
+        margin-top: 20rpx;
+        padding: 48rpx 24rpx;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border-radius: 8rpx;
+        // 手机号
+        .phone_top {
+            width: 100%;
+            height: 110rpx;
+            font-size: 27rpx;
+            color: #000000;
+            position: relative;
+            box-sizing: border-box;
+            .btn {
+                width: 300rpx;
+                height: 60rpx;
+                font-size: 23rpx;
+                line-height: 60rpx;
+                text-align: center;
+                color: #ffffff;
+                background-color: #ed018c;
+                position: absolute;
+                right: 0;
+                top: 4rpx;
+                display:none;
+            }
+            .phone_one {
+                width: 300rpx;
+                height: 60rpx;
+                font-size: 23rpx;
+                line-height: 60rpx;
+                text-align: center;
+                color: #000000;
+                position: absolute;
+                right: -75rpx;
+                top: -10rpx;
+            }
+        }
+        // 实付款
+        .payment {
+            width: 100%;
+            height: 91rpx;
+            .true_payment {
+                width: 100%;
+                height: 40rpx;
+                p:nth-child(1) {
+                    font-size: 30rpx;
+                    font-weight: 700;
+                    color: #000000;
+                    float: left;
+                }
+                p:nth-child(2) {
+                    font-size: 31rpx;
+                    color: #ee0494;
+                    float: right;
+                }
+            }
+            .integral_mortgage {
+                width: 100%;
+                margin-top: 30rpx;
+                height: 40rpx;
+                p:nth-child(1) {
+                    font-size: 30rpx;
+                    color: #cfcfcf;
+                    float: left;
+                }
+                p:nth-child(2) {
+                    font-size: 31rpx;
+                    color: #cecece;
+                    float: right;
+                }
+            }
+        }
+    }
+    // 提交订单
+    .submit {
+        width: 100%;
+        height: 98rpx;
+        margin-top: 84rpx;
+        background-color: #ed018c;
+        border-radius: 50rpx;
+        font-size: 37rpx;
+        color: #fffffb;
+        line-height: 98rpx;
+        text-align: center;
+    }
+}
+.clearfix::after {
+    content: "";
+    height: 0;
+    width: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}

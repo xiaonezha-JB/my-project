@@ -1,0 +1,466 @@
+button {
+    padding: 0rpx;
+    margin: 0rpx;
+    line-height: none;
+    border-radius: none;
+}
+// 头部图片
+.banner {
+    width: 100%;
+    height: 406rpx;
+    border-top: 1rpx solid #cccccc;
+    .banner-img {
+        width: 100%;
+        height: 367rpx;
+        image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// 内容区域
+.content {
+    width: 100%;
+    // 信息介绍
+    .information {
+        width: 100%;
+        height: 310rpx;
+        padding: 20rpx 30rpx;
+        box-sizing: border-box;
+        // 上面文字
+        .information_top {
+            width: 100%;
+            height: 46rpx;
+            top: 10rpx;
+            right: 0rpx;
+            .word_left {
+                width: 210rpx;
+                height: 40rpx;
+                float: left;
+                span:nth-child(1) {
+                    font-size: 39rpx;
+                    color: #e8028f;
+                    font-weight: 700;
+                }
+                span:nth-child(2) {
+                    font-size: 21rpx;
+                    color: #cdcdcd;
+                    text-decoration: line-through;
+                    padding-left: 28rpx;
+                }
+            }
+            .word_right {
+                width: 134rpx;
+                height: 80rpx;
+                float: right;
+                // i {
+                //     padding-top: 11rpx;
+                //     padding-bottom: 5rpx;
+                //     box-sizing: border-box;
+                // }
+                .shoucang{
+                    font-size: 60rpx;
+                    color: #ffffff;
+                    line-height: 80rpx;
+                    margin-top: -5rpx;
+                    float: right;
+                    text-shadow: 2rpx 1rpx 3rpx #000000;
+                }
+                .shoucang.active{
+                    color: #ed018c;
+                }
+                .btn_zf {
+                    background-color: #ffffff;
+                    float: left;
+                    image {
+                        width: 46rpx;
+                        height: 46rpx;
+                    }
+                }
+                .btn_zf::after {
+                    border: none;
+                }
+            }
+        }
+        // 五角星
+        .head_r {
+            width: 210rpx;
+            height: 25px;
+            margin-top: 19rpx;
+            box-sizing: border-box;
+            .no_star {
+                width: 30rpx;
+                height: 30rpx;
+            }
+            .star {
+                width: 30rpx;
+                height: 30rpx;
+            }
+            .praise {
+                font-size: 30rpx;
+                color: green;
+                display: inline-block;
+                line-height: 40rpx;
+                padding-left: 10rpx;
+            }
+        }
+        // 活动介绍
+        .activity {
+            width: 100%;
+            height: 78rpx;
+            box-sizing: border-box;
+            p {
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                overflow:hidden;
+            }
+            p:nth-child(1) {
+                font-size: 32rpx;
+                color: #333333;
+                font-weight: 700;
+            }
+            p:nth-child(2) {
+                font-size: 32rpx;
+                color: #333333;
+                font-weight: 700;
+                padding-top: 14rpx;
+            }
+        }
+        // 积分等级
+        .integral_and_grade {
+            width: 100%;
+            height: 25rpx;
+            margin-top: 30rpx;
+            box-sizing: border-box;
+            display: flex;
+            .word_ig {
+                font-size: 25rpx;
+                color: #9b9b9b;
+                flex: 1;
+            }
+        }
+    }
+    // 描述
+    .describe {
+        width: 100%;
+        height: 206rpx;
+        padding: 39rpx 30rpx;
+        box-sizing: border-box;
+        .describe_ash {
+            font-size: 25rpx;
+            color: #989898;
+            float: left;
+        }
+        .describe_black {
+            width: 567rpx;
+            height: 70rpx;
+            font-size: 25rpx;
+            color: #333333;
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            display:-webkit-box; 
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:2; 
+        }
+        .describe_bottom {
+            font-size: 25rpx;
+            color: #989898;
+            float: left;
+            margin-top: 36rpx;
+        }
+        .describe_black_right {
+            width: 567rpx;
+            height: 61rpx;
+            font-size: 25rpx;
+            color: #333333;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            margin-top: 36rpx;
+        }
+    }
+    // 电话
+    .telephone {
+        width: 100%;
+        height: 267rpx;
+        padding: 37rpx 30rpx;
+        box-sizing: border-box;
+        position: relative;
+        // 商家信息
+        .merchant {
+            width: 100%;
+            height: 31rpx;
+            font-size: 31rpx;
+            color: #404040; 
+        }
+        // 店面
+        .storefront {
+            width: 100%;
+            height: 120rpx;
+            position: relative;
+            .storefront_picture {
+                width: 120rpx;
+                height: 120rpx;
+                margin-top: 31rpx;
+                background-color: #64abf8;
+                border-radius: 5rpx;
+            }
+            .merchant_word {
+                width: 400rpx;
+                height: 85rpx;
+                position: absolute;
+                bottom: 19rpx;
+                left: 138rpx;
+                box-sizing: border-box;
+                p:nth-child(1) {
+                    font-size: 29rpx;
+                    color: #000000;
+                }
+                p:nth-child(2) {
+                    margin-top: 15rpx;
+                    font-size: 29rpx;
+                    color: #a2a2a2;
+                }
+                p:nth-child(2) image {
+                    height: 31rpx;
+                    width: 25rpx;
+                }
+            }
+        }
+        //  电话图标
+        .telephone_icon {
+            width: 46rpx;
+            height: 46rpx;
+            position: absolute;
+            right: 5%;
+            bottom: 20%;
+            image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    // 详细介绍
+    .content_particular {
+        width: 100%;
+        height: 1000rpx;
+        padding: 61rpx 30rpx 45rpx;
+        box-sizing: border-box;
+        .test {
+            width: 100%;
+            .testNav {
+                height: 58rpx;
+                display: flex;
+                .testTitle {
+                    font-size: 32rpx;
+                    color: #020202;
+                    text-align: center;
+                    font-weight: 700;
+                }
+                .testTitle:nth-child(2) {
+                    margin-left: 65rpx;
+                    text-align: center;
+                }
+                .selected {
+                    color: #ec0189;
+                    border-bottom: 2rpx solid #ec0189;
+                }
+            }
+            .container {
+                width: 100%;
+                position: relative;
+                // 活动规则
+                .activity_rules {
+                    width: 100%;
+                    margin-top: 50rpx;
+                    position: absolute;
+                    top: 0;
+                    .period_of_validity {
+                        width: 100%;
+                        height: 77rpx;
+                        box-sizing: border-box;
+                    }
+                    .period_of_validity li:nth-child(1) {
+                        font-size: 25rpx;
+                        color: #000000;
+                    }
+                    .period_of_validity li:nth-child(2) {
+                        padding-top: 20rpx;
+                        font-size: 23rpx;
+                        color: #000000;
+                    }
+                    .period_of_validity:nth-child(2) {
+                        margin-top: 30rpx;
+                    }
+                    .period_of_validity:nth-child(3) {
+                        margin-top: 30rpx;
+                    }
+                    .period_of_validity:nth-child(4) {
+                        margin-top: 20rpx;
+                    }
+                    .period_of_validity:nth-child(4) li {
+                        padding-top: 20rpx;
+                        font-size: 23rpx;
+                        color: #000000;
+                    }
+                }
+                // 用户评价
+                .user_evaluate {
+                    width: 100%;
+                    margin-top: 30rpx;
+                    position: absolute;
+                    top: 0;
+                    padding-right: 30rpx;
+                    box-sizing: border-box;
+                    .evaluate {
+                        width: 100%;
+                        height: 453rpx;
+                        margin-bottom: 30rpx;
+                        border-bottom: 1rpx solid #cccccc;
+                        // 头像和昵称
+                        .name_head {
+                            width: 100%;
+                            height: 62rpx;
+                            display: flex;
+                        }
+                        .evaluate_head {
+                            width: 62rpx;
+                            height: 62rpx;
+                            border-radius: 50rpx;
+                            background-color: #64abf8;
+                        }
+                        .evaluate_name {
+                            width: 500rpx;
+                            height: 62rpx;
+                            line-height: 62rpx;
+                            font-size: 25rpx;
+                            color: #666666;
+                            margin-left: 10rpx;
+                        }
+                        // 文字评价
+                        .evaluate_word {
+                            width: 100%;
+                            height: 70rpx;
+                            font-size: 27rpx;
+                            color: #333333;
+                            overflow:hidden; 
+                            text-overflow:ellipsis;
+                            display:-webkit-box; 
+                            -webkit-box-orient:vertical;
+                            -webkit-line-clamp:2; 
+                            margin-top: 28rpx;
+                        }
+                        // 评价时间
+                        .evaluate_time {
+                            width: 100%;
+                            height: 20rpx;
+                            font-size: 20rpx;
+                            color: #999999;
+                        }
+                        // 商家回应
+                        .reply {
+                            width: 100%;
+                        }
+                        .triangle{
+                            width: 0;
+                            height: 0;
+                            border-width: 18rpx;
+                            border-style: solid;
+                            border-color:  transparent  transparent #efefef transparent;
+                            margin-left: 30rpx;
+                        }
+                        .merchant_reply {
+                            width: 100%;
+                            padding: 20rpx 20rpx;
+                            background-color: #efefef;
+                            span:nth-child(1) {
+                                font-size: 25rpx;
+                                color: #e74c5f;
+                            }
+                            span:nth-child(2) {
+                                font-size: 25rpx;
+                                color: #333333;
+                            }
+                        }
+                        // 图片评价
+                        .evaluate_picture {
+                            width: 100%;
+                            height: 121rpx;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    // 线条
+    .line {
+        width: 100%;
+        height: 16rpx;
+        background-color: #f3f3f3;
+    }
+    .clearfix::after {
+        content: "";
+        height: 0;
+        width: 0;
+        line-height: 0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+}
+// 底部购买
+.bottom_purchase {
+    width: 100%;
+    height: 169rpx;
+    box-sizing: border-box;
+    padding: 52rpx 30rpx 21rpx;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    .purchase_box {
+        width: 692rpx;
+        height: 97rpx;
+        display: flex;
+        border-radius: 50rpx;
+        overflow: hidden;
+        .purchase_left {
+            width: 346rpx;
+            height: 97rpx;
+            background-color: #333333;
+            padding-left: 60rpx;
+            padding-top: 10rpx;
+            box-sizing: border-box;
+            p span:nth-child(1) {
+                font-size: 31rpx;
+                font-weight: 700;
+                color: #fffeff;
+            }
+            p span:nth-child(2) {
+                font-size: 19rpx;
+                color: #e7a242;
+            }
+            p:nth-child(2) {
+                font-size: 16rpx;
+                color: #fffeff;
+                margin-top: 5rpx;
+            }
+        }
+        .purchase_right {
+            width: 346rpx;
+            height: 97rpx;
+            background-color: #ed018c;
+            font-size: 38rpx;
+            color: #fffeff;
+            font-weight: 700;
+            line-height: 97rpx;
+            text-align: center;
+        }
+    }
+}
+// 空格
+.bottom {
+    height: 170rpx;
+}

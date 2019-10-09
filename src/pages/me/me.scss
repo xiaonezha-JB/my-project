@@ -1,0 +1,115 @@
+// 头部
+.head {
+    width: 100%;
+    height: 300rpx;
+    position: relative;
+    // 头部背景
+    .background {
+        width: 100%;
+        height: 222rpx;
+        image {
+            width: 100%;
+            height: 100%; 
+        }
+    }
+    .show {
+        width: 100%;
+        height: 400rpx;
+        position: absolute;
+        top: 0;
+    }
+    // 头像
+    .picture_frame {
+        width: 185rpx;
+        height: 210rpx;
+        position: absolute;
+        top: 10%;
+        left: 37%;
+        .picture {
+            width: 124rpx;
+            height: 124rpx;
+            border: 1rpx solid #f20083;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .name {
+            width: 300rpx;
+            height: 37rpx;
+            margin: 50rpx auto;
+            open-data {
+                text-align: center;
+                line-height: 37rpx;
+                font-weight: 700;
+            }
+        }
+    }
+}
+// 内容区域
+.content {
+    width: 100%;
+    padding: 0 30rpx;
+    margin-top: 60rpx;
+    box-sizing: border-box;
+    // 展示内容
+    .content-box {
+        width: 100%;
+        height: 84rpx;
+        display: flex;
+        border-bottom: 1rpx solid #f3f3f3;
+        margin-top: 40rpx;
+        // 图标
+        .integral-box {
+            width: 39rpx;
+            height: 40rpx;
+            margin: auto 0;
+            image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // 文字
+        .integral-word {
+            width: 100%;
+            height: 86rpx;
+            margin-left: 31rpx;
+            box-sizing: border-box;
+            flex: 1;
+            span:nth-child(1) {
+                font-size: 31rpx;
+                color: #353535;
+                line-height: 86rpx;
+            }
+            span:nth-child(2) {
+                font-size: 24rpx;
+                color: #999999;
+                padding-top: 6rpx;
+                float: right;
+                line-height: 86rpx;
+                i {
+                    float: right;
+                    font-size: 24rpx;
+                    padding-top: 6rpx;
+                }
+            }
+            .telephone {
+                width: 194rpx;
+                height: 60rpx;
+                float: right;
+                margin-right: 5rpx;
+                p:nth-child(1) {
+                    font-size: 22rpx;
+                    color: #f20083;
+                    float: right;
+                }
+                p:nth-child(2) {
+                    font-size: 22rpx;
+                    padding-top: 16rpx;
+                    color: #d0d0d0;
+                    float: right;
+                }
+            }
+        }
+    }
+}

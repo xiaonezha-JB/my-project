@@ -1,0 +1,117 @@
+.content {
+    width: 100%;
+    border-top: 1rpx solid #cccccc;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    .top_box {
+        width: 100%;
+        height: 291rpx;
+        border-bottom: 1rpx solid #f3f3f3;
+        .star {
+            width: 408rpx;
+            height: 138rpx;
+            margin: 70rpx auto 0;
+            .head-r {
+                width: 100%;
+                height: 55rpx;
+                flex: auto;
+                display: flex;
+                .no-star {
+                    width: 54rpx;
+                    height: 60rpx;
+                    flex: auto;
+                    margin-right: 10rpx;
+                    display: inline-block;
+                    margin-right: 10rpx;
+                }
+                .star_one {
+                    width: 54rpx;
+                    height: 60rpx;
+                    flex: auto;
+                    display: inline-block;
+                    margin-right: 10rpx;
+                }
+            }
+        }
+        .word {
+            width: 100%;
+            height: 31rpx;
+            font-size: 30rpx;
+            color: #cccccc;
+            text-align: center;
+            margin-top: 55rpx;
+        }
+    }
+    .middle {
+        width: 100%;
+        height: 677;
+        border-bottom: 1rpx solid #f3f3f3;
+        box-sizing: border-box;
+        .message {
+          width: 100%;
+          height: 326rpx;
+          box-sizing: border-box;
+          padding: 32rpx 0rpx 30rpx; 
+          .word_content {
+            width: 100%;
+            height: 100%;
+            font-size: 25rpx;
+            color: #000000;
+          }
+        }
+        .album_one {
+          width: 100%;
+          height: 314rpx;
+          .album_two {
+            width: 152rpx;
+            height: 152rpx;
+            float: left;
+            margin-right: 30rpx;
+            margin-bottom: 10rpx;
+            .logoinfo {
+              width: 100%;
+              height: 100%;
+              image {
+                width: 100%;
+                height: 100%;
+                border-radius: 8rpx;
+              }
+            }
+          }
+          .album_two:nth-child(4) {
+            margin-right: 0;
+          }
+          .album {
+            width: 100%;
+            height: 100%;
+          }
+          .btn_img {
+            width: 152rpx;
+            height: 152rpx;
+            background-color: #ed018c;
+            float: left;
+            font-size: 24rpx;
+            color: #ffffff;
+            padding: 0rpx 0rpx; 
+            image {
+              width: 56rpx;
+              height: 46rpx;
+              display: block;
+              margin: 30rpx auto 0rpx;
+            }
+          }
+        }
+    }
+    .btn {
+      width: 100%;
+      height: 98rpx;
+      border-radius: 50rpx;
+      background-color: #ed018c;
+      font-size: 36rpx;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 98rpx;
+      text-align: center;
+      margin: 50rpx auto 0;
+    }
+}

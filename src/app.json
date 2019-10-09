@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/CityPage/main",
+    "pages/order/main",
+    "pages/me/main",
+    "pages/details/main",
+    "pages/collect/main",
+    "pages/generalize/main",
+    "pages/order_particulars/main",
+    "pages/order_evaluate/main",
+    "pages/order_use/main",
+    "pages/purchase/main",
+    "pages/payment/main",
+    "pages/auth/main",
+    "pages/user_evaluate/main",
+    "pages/search/main",
+    "pages/accomplish/main",
+    "pages/integral/main",
+    "pages/search_seek/main",
+    "pages/city/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星彩",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "text": "首页",
+        "iconPath": "/static/images/home.png",
+        "selectedIconPath": "/static/images/home11.png"
+      },
+      {
+        "pagePath": "pages/order/main",
+        "text": "订单",
+        "iconPath": "/static/images/order.png",
+        "selectedIconPath": "/static/images/click-order.png"
+      },
+      {
+        "pagePath": "pages/me/main",
+        "text": "我的",
+        "iconPath": "/static/images/my.png",
+        "selectedIconPath": "/static/images/click-my.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
